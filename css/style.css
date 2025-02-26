@@ -1,19 +1,18 @@
 
 .holder .item:nth-child(1){
     background-color: red;
+    flex-basis: 50%;
 }
 .holder .item:nth-child(2){
     background-color: skyblue;
-    align-self: flex-end;
     order: 2;
 }
 .holder .item:nth-child(3){
     background-color: purple;
-    align-self: flex-end;
+    flex-basis: 50%;
 }
 .holder .item:nth-child(4){
     background-color: green;
-    align-self: flex-end;
     order: 2;
 }
 .holder .item:nth-child(5){
@@ -22,19 +21,20 @@
 }
 
 .holder{
-    display: flex;
     align-items: flex-start;
     border: 3px solid black;
     margin: 0 auto;
     width: 500px;
     height: 120px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .holder .item{
     padding: 21px;
     text-align: center;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 .item{
